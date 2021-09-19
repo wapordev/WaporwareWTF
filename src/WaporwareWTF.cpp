@@ -145,28 +145,28 @@ struct WaporwareWTFWidget : ModuleWidget {
 
 		addParam(createParamCentered<CKSS>(mm2px(Vec(15.24, 38.55)), module, WaporwareWTF::DUAL_PARAM));
 		addParam(createParamCentered<CKSS>(mm2px(Vec(45.72, 38.55)), module, WaporwareWTF::INVERT_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(71.12, 38.55)), module, WaporwareWTF::NOISE_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(81.28, 38.55)), module, WaporwareWTF::NOISEMIX_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(15.24, 57.825)), module, WaporwareWTF::FRONT_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(45.72, 57.825)), module, WaporwareWTF::WIDTH_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(76.2, 57.825)), module, WaporwareWTF::REAR_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(15.24, 77.1)), module, WaporwareWTF::FRONTMOD_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(45.72, 77.1)), module, WaporwareWTF::WIDTHMOD_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(76.2, 77.1)), module, WaporwareWTF::REARMOD_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(15.24, 96.375)), module, WaporwareWTF::FM_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(45.72, 96.375)), module, WaporwareWTF::PITCH_PARAM));
-		addParam(createParamCentered<RoundBlackKnob>(mm2px(Vec(76.2, 96.375)), module, WaporwareWTF::FINE_PARAM));
+		addParam(createParamCentered<WaporwareGrayKnobSmall>(mm2px(Vec(71.12, 38.55)), module, WaporwareWTF::NOISE_PARAM));
+		addParam(createParamCentered<WaporwareGrayKnobSmall>(mm2px(Vec(81.28, 38.55)), module, WaporwareWTF::NOISEMIX_PARAM));
+		addParam(createParamCentered<WaporwareRedKnob>(mm2px(Vec(15.24, 54.725)), module, WaporwareWTF::FRONT_PARAM));
+		addParam(createParamCentered<WaporwareGreenKnob>(mm2px(Vec(45.72, 54.725)), module, WaporwareWTF::WIDTH_PARAM));
+		addParam(createParamCentered<WaporwareBlueKnob>(mm2px(Vec(76.2, 54.725)), module, WaporwareWTF::REAR_PARAM));
+		addParam(createParamCentered<WaporwareRedKnob>(mm2px(Vec(15.24, 74)), module, WaporwareWTF::FRONTMOD_PARAM));
+		addParam(createParamCentered<WaporwareGreenKnob>(mm2px(Vec(45.72, 74)), module, WaporwareWTF::WIDTHMOD_PARAM));
+		addParam(createParamCentered<WaporwareBlueKnob>(mm2px(Vec(76.2, 74)), module, WaporwareWTF::REARMOD_PARAM));
+		addParam(createParamCentered<WaporwareGrayKnob>(mm2px(Vec(15.24, 93.275)), module, WaporwareWTF::FM_PARAM));
+		addParam(createParamCentered<WaporwareGrayKnob>(mm2px(Vec(45.72, 93.275)), module, WaporwareWTF::PITCH_PARAM));
+		addParam(createParamCentered<WaporwareGrayKnob>(mm2px(Vec(76.2, 93.275)), module, WaporwareWTF::FINE_PARAM));
 
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(10.16, 122.075)), module, WaporwareWTF::FRONT_INPUT));
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(20.32, 122.075)), module, WaporwareWTF::WIDTH_INPUT));
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(30.48, 122.075)), module, WaporwareWTF::REAR_INPUT));
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(40.64, 122.075)), module, WaporwareWTF::FM_INPUT));
-		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(50.8, 122.075)), module, WaporwareWTF::OCT_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(7.728, 122.075)), module, WaporwareWTF::FRONT_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(17.888, 122.075)), module, WaporwareWTF::WIDTH_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(28.048, 122.075)), module, WaporwareWTF::REAR_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(38.208, 122.075)), module, WaporwareWTF::FM_INPUT));
+		addInput(createInputCentered<PJ301MPort>(mm2px(Vec(48.368, 122.075)), module, WaporwareWTF::OCT_INPUT));
 
-		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(76.2, 109.225)), module, WaporwareWTF::NOISE_OUTPUT));
-		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(66.04, 122.075)), module, WaporwareWTF::FRONT_OUTPUT));
-		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(76.2, 122.075)), module, WaporwareWTF::OUT_OUTPUT));
-		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(86.36, 122.075)), module, WaporwareWTF::REAR_OUTPUT));
+		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(73.768, 109.225)), module, WaporwareWTF::NOISE_OUTPUT));
+		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(63.608, 122.075)), module, WaporwareWTF::FRONT_OUTPUT));
+		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(73.768, 122.075)), module, WaporwareWTF::OUT_OUTPUT));
+		addOutput(createOutputCentered<PJ301MPort>(mm2px(Vec(83.928, 122.075)), module, WaporwareWTF::REAR_OUTPUT));
 	}
 };
 
