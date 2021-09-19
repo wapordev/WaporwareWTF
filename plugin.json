@@ -1,0 +1,26 @@
+{
+  "slug": "WaporwareWTF",
+  "name": "WaporwareWTF",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "brand": "Waporware",
+  "author": "Waporwave",
+  "authorEmail": "thecookielegends@gmail.com",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "WaporwareWTF",
+      "name": "WaporwareWTF",
+      "description": "Window Transform Function to tranform between a front and rear wave.",
+      "tags": [
+        "Oscillator",
+        "Noise"
+      ]
+    }
+  ]
+}
